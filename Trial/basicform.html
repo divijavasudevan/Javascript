@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Jfun1()
+            {
+                if (form1.txt1.value=="")
+                {
+                alert("Name:Required field");
+                form1.txt1.focus();
+                return false;
+                }
+
+                else if(form1.txt2.value=="")
+                {
+                alert("Email:Required field");
+                form1.txt2.focus();
+                return false;
+                }
+                else return true;
+            }
+            
+
+        </script>
+        </head>
+
+        <body>
+            <form method="POST" name=form1  onsubmit="return Jfun1()" action="index.html">
+               Name <input type="text"  name=txt1>
+               Email <input type="email"  name=txt2>
+                <input type="submit" value="SUBMIT" >
+               
+                
+            </form>
+        </body>   
+
+
+</html>

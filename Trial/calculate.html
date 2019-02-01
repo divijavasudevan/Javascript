@@ -1,0 +1,59 @@
+                                                                                                                                                              <!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Jfun1()
+            { var x =eval(form1.math.value);
+                var y=eval(form1.cs.value);
+                var z= eval(form1.phy.value);
+                var total=x+y+z;
+                var percentage=((total/300)*100);
+                if(x>y)
+                  {
+                      if(x>z)
+                      var maximum=x;
+                      else
+                      maximum=z;
+
+                  }
+                  else{
+                      if(y>z)
+                      maximum=y;
+                      else
+                      maximum=z;
+                  }
+                  form1.tot.value=total;
+                  form1.per.value=percentage;
+                  form1.max.value=maximum;
+
+            }
+
+                
+                
+
+
+
+               
+            
+
+        </script>
+        </head>
+
+        <body>
+            <form method="POST" name= form1>
+               Math <input type="number"  name=math>                
+               Computer Science <input type="number"  name=cs>
+               Physics <input type="number" name=phy>
+               Total <input type="number" name=tot>
+               Percentage <input type="number" name=per>
+               Maximum <input type="number" name=max>
+
+                <input type="button" value="Result" onclick="return Jfun1()">
+
+               
+                
+            </form>
+        </body>   
+
+
+</html>
